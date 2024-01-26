@@ -8,6 +8,9 @@ CANVAS_WIDTH = canvas.width = 500;
 const noOfEnemies = 100;
 const enemiesArray = [];
 
+const enemyImage=new Image();
+enemyImage.src="./enemy1.png";
+
 class enemy {
   constructor() {
     this.x = Math.random() * canvas.width;
@@ -22,6 +25,7 @@ class enemy {
   }
   draw() {
     ctx.strokeRect(this.x, this.y, this.width, this.height);
+    ctx.drawImage(enemyImage,this.x,this.y,this.width,this.height);
   }
 }
 
