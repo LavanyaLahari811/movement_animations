@@ -23,7 +23,7 @@ class enemy {
     this.flapSpeed = Math.floor(Math.random() * 3 + 2);
   }
   update() {
-    this.x += Math.random() * 4 - 2;
+    this.x += Math.random() * 2 - 1;
     this.y += Math.random() * 4 - 2;
     if (gameFrame % this.flapSpeed == 0) {
       if (this.frame > 4) {
